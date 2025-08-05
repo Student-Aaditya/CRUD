@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit User</title></head>
+<body>
+  <h1>Edit User</h1>
+  <form action="/employee/<%= data._id %>?_method=PUT" method="POST">
+    <input name="name" value="<%= data.name %>" required><br>
+    <input name="email" value="<%= data.email %>" required><br>
+    <input name="mobile" value="<%= data.mobile %>"><br>
+    <input name="data" value="<%= data.data %>"><br>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>

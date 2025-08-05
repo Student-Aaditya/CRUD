@@ -1,0 +1,23 @@
+{
+  "name": "crud-using-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/method-override": "^3.0.0",
+    "@types/mongoose": "^5.11.97",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

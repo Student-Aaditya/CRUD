@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>User List</title></head>
+<body>
+  <h1>Add New User</h1>
+  <form action="/employee" method="POST">
+    <input name="name" placeholder="Name" required><br>
+    <input name="email" placeholder="Email" required><br>
+    <input name="mobile" placeholder="Mobile"><br>
+    <input name="data" placeholder="Data"><br>
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>All Users</h2>
+  <ul>
+    <% data.forEach(user => { %>
+      <li>
+        <%= user.name %> - <%= user.email %>
+        <form action="/employee/<%= user._id %>?_method=DELETE" method="POST" style="display:inline;">
+          <button>Delete</button>
+        </form>
+        <a href="/employee/<%= user._id %>">Edit</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
